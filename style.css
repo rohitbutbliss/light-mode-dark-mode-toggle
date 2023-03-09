@@ -14,7 +14,9 @@
 
 body {
   background-color: var(--background-color);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
   display: grid;
   place-items: center;
 }
@@ -26,6 +28,7 @@ body.night {
 
 #main {
   width: 40%;
+  min-width: 250px;
   border-radius: 30px;
   overflow: hidden;
   background-color: var(--background-color);
