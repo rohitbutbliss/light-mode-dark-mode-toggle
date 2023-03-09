@@ -60,12 +60,14 @@ body.night {
   border-radius: 50%;
   background-color: yellow;
   left: 0;
+  box-shadow: 0 0 5px var(--midnightblue);
 }
 
 .night #toggle-slider {
   background-color: white;
   left: inherit;
   right: 0;
+  box-shadow: 0 0 5px white;
 }
 
 .night #dark-mode {

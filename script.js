@@ -1,6 +1,4 @@
 const toggleMode = document.getElementsByClassName("toggle-mode");
-const lightMode = document.getElementById("light-mode");
-const darkMode = document.getElementById("dark-mode");
 let nightMode = true;
 Array.from(toggleMode).forEach((element) =>
   element.addEventListener("click", (event) => {
