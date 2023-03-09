@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-color: var(--midnightblue);
+  --background-color: white;
+  --midnightblue: #002247;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+body.night {
+  --background-color: var(--midnightblue);
+  --text-color: white;
+}
+
+#main {
+  width: 40%;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--background-color);
+  box-shadow: 0 0 30px var(--midnightblue);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#example-container {
+  color: var(--text-color);
+}
+
+.night #main {
+  box-shadow: 0 0 30px white;
+}
+
+#toggle-modes {
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+
+#toggle-container {
+  width: 100%;
+}
+
+#toggle-slider {
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: yellow;
+  left: 0;
+}
+
+.night #toggle-slider {
+  background-color: white;
+  left: inherit;
+  right: 0;
+}
+
+.night #dark-mode {
+  color: var(--midnightblue);
+}
+
+.toggle-mode {
+  position: relative;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--text-color);
+}
